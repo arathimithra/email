@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header style="text-align:center;"><h1>email demo</h1></header>
+<div style="text-align:center;">
+<h4>contact client</h4>
+
+<form method="POST" action="{%url 'index' %}">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="title" required>
+    <br>
+    <br>
+     <input type="email" name="email" placeholder="company email" required>
+    <br>
+    <br>
+     <input type="message" name="message" placeholder="message" required>
+    <br>
+    <br>
+    <button class="btn btn-primary" type="submit">send</button>
+    <br>
+    <br>
+</form>
+</div>
+
+
+</form>
+</body>
+</html>
